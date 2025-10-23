@@ -33,10 +33,10 @@ export const metadata: Metadata = {
     siteName: 'Eagle HR Consultants',
     images: [
       {
-        url: '/images/logo/logo_dark_ubxaCll.png',
+        url: '/og-image.webp',
         width: 1200,
         height: 630,
-        alt: 'Eagle HR Consultants - Leading HR Excellence in Kenya',
+        alt: 'Eagle HR Consultants - Professional HR Services in Kenya',
       },
     ],
     locale: 'en_KE',
@@ -46,7 +46,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Eagle HR Consultants - Leading HR Excellence in Kenya",
     description: "Transform your organization with Kenya's premier HR consulting firm. Expert recruitment, training, HR outsourcing, and advisory services that drive success.",
-    images: ['/images/logo/logo_dark_ubxaCll.png'],
+    images: ['/og-image.webp'],
+    creator: '@eaglehr',
+    site: '@eaglehr',
   },
   robots: {
     index: true,
@@ -72,6 +74,12 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   manifest: '/site.webmanifest',
+  other: {
+    'og:image:width': '1200',
+    'og:image:height': '630',
+    'og:image:type': 'image/webp',
+    'twitter:image:alt': 'Eagle HR Consultants - Professional HR Services in Kenya',
+  },
 };
 
 export default function RootLayout({
