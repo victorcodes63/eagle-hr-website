@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { ArrowRight, CheckCircle, Target, BarChart3, Users, Shield } from 'lucide-react';
+import Link from 'next/link';
 
 const SlidingHRQuestions = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -287,14 +288,16 @@ const SlidingHRQuestions = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-primary-900 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition-all duration-300 flex items-center mx-auto"
-          >
-            Get Your HR Questions Answered
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </motion.button>
+          <Link href="/contact">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-primary-900 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition-all duration-300 flex items-center mx-auto"
+            >
+              Get Your HR Questions Answered
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>

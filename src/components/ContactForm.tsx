@@ -22,15 +22,22 @@ const ContactForm = () => {
     setSubmitStatus('idle');
 
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      // Here you would typically send the data to your API
-      console.log('Form data:', data);
-      
-      setSubmitStatus('success');
-      reset();
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        reset();
+      } else {
+        setSubmitStatus('error');
+      }
     } catch (error) {
+      console.error('Error submitting form:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
