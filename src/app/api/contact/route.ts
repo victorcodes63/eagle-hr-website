@@ -16,12 +16,12 @@ export async function POST(request: NextRequest) {
 
     // Create transporter using SMTP
     const transporter = nodemailer.createTransporter({
-      host: process.env.SMTP_HOST || 'smtp.gmail.com',
-      port: parseInt(process.env.SMTP_PORT || '587'),
-      secure: false, // true for 465, false for other ports
+      host: process.env.SMTP_HOST || 'mail.eaglehr.co.ke',
+      port: parseInt(process.env.SMTP_PORT || '465'),
+      secure: true, // true for 465 (SSL), false for other ports
       auth: {
-        user: process.env.SMTP_USER, // Your email
-        pass: process.env.SMTP_PASS, // Your email password or app password
+        user: process.env.SMTP_USER, // info@eaglehr.co.ke
+        pass: process.env.SMTP_PASS, // Your email password
       },
     });
 
