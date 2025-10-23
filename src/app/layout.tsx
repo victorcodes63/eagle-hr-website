@@ -22,18 +22,18 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://www.eaglehr.co.ke'),
+  metadataBase: new URL('https://eagle-hr-website.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Eagle HR Consultants - Leading HR Excellence in Kenya",
     description: "Transform your organization with Kenya's premier HR consulting firm. Expert recruitment, training, HR outsourcing, and advisory services that drive success.",
-    url: 'https://www.eaglehr.co.ke',
+    url: 'https://eagle-hr-website.vercel.app',
     siteName: 'Eagle HR Consultants',
     images: [
       {
-        url: '/og-image.webp',
+        url: 'https://eagle-hr-website.vercel.app/og-image.svg',
         width: 1200,
         height: 630,
         alt: 'Eagle HR Consultants - Professional HR Services in Kenya',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Eagle HR Consultants - Leading HR Excellence in Kenya",
     description: "Transform your organization with Kenya's premier HR consulting firm. Expert recruitment, training, HR outsourcing, and advisory services that drive success.",
-    images: ['/og-image.webp'],
+    images: ['https://eagle-hr-website.vercel.app/og-image.svg'],
     creator: '@eaglehr',
     site: '@eaglehr',
   },

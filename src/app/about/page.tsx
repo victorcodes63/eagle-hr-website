@@ -105,7 +105,7 @@ export default function AboutPage() {
         description: "Applying international best practices to local contexts for maximum impact, driving socio-economic development."
       }
     ],
-    linkedin: "https://linkedin.com/in/dr-ben-chumo",
+    linkedin: "https://www.linkedin.com/in/dr-ben-chumo-phd-55764a155/",
     ctaText: "Schedule a Meeting",
     ctaLink: "/contact"
   };
